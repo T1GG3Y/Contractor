@@ -1,0 +1,387 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww40760\viewh22280\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Growth Systems for Contractors</title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <script src="https://unpkg.com/lucide@latest"></script>\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">\
+    <style>\
+        body \{ font-family: 'Inter', sans-serif; \}\
+        .phone-mockup \{\
+            border: 12px solid #1f2937;\
+            border-radius: 2rem;\
+            overflow: hidden;\
+            position: relative;\
+            background: #fff;\
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);\
+        \}\
+        .notch \{\
+            position: absolute;\
+            top: 0;\
+            left: 50%;\
+            transform: translateX(-50%);\
+            width: 40%;\
+            height: 25px;\
+            background: #1f2937;\
+            border-bottom-left-radius: 12px;\
+            border-bottom-right-radius: 12px;\
+            z-index: 10;\
+        \}\
+        .message-bubble \{\
+            max-width: 80%;\
+            padding: 10px 15px;\
+            border-radius: 18px;\
+            margin-bottom: 10px;\
+            font-size: 14px;\
+            line-height: 1.4;\
+            opacity: 0;\
+            transform: translateY(20px);\
+            animation: popIn 0.5s forwards;\
+        \}\
+        .msg-received \{\
+            background-color: #e5e7eb;\
+            color: #1f2937;\
+            align-self: flex-start;\
+            border-bottom-left-radius: 4px;\
+        \}\
+        .msg-sent \{\
+            background-color: #2563eb;\
+            color: white;\
+            align-self: flex-end;\
+            border-bottom-right-radius: 4px;\
+        \}\
+        @keyframes popIn \{\
+            to \{ opacity: 1; transform: translateY(0); \}\
+        \}\
+        .review-star \{ color: #fbbf24; \}\
+        .gradient-text \{\
+            background: linear-gradient(to right, #2563eb, #1e40af);\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+        \}\
+    </style>\
+</head>\
+<body class="bg-gray-50 text-gray-800">\
+\
+    <!-- Navbar -->\
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="flex justify-between h-16 items-center">\
+                <div class="flex-shrink-0 flex items-center gap-2">\
+                    <i data-lucide="zap" class="h-8 w-8 text-blue-600"></i>\
+                    <span class="font-bold text-xl tracking-tight text-gray-900">Foundational Systems</span>\
+                </div>\
+                <div class="hidden md:flex space-x-8">\
+                    <a href="#features" class="text-gray-500 hover:text-blue-600 transition">The System</a>\
+                    <a href="#demo" class="text-gray-500 hover:text-blue-600 transition">Live Demo</a>\
+                    <a href="#pricing" class="text-gray-500 hover:text-blue-600 transition">Pricing</a>\
+                </div>\
+                <button onclick="scrollToContact()" class="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition shadow-lg shadow-blue-600/20">\
+                    Get Your Build\
+                </button>\
+            </div>\
+        </div>\
+    </nav>\
+\
+    <!-- Hero Section -->\
+    <header class="relative bg-white overflow-hidden">\
+        <div class="max-w-7xl mx-auto">\
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-20 px-4 sm:px-6 lg:px-8">\
+                <main class="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">\
+                    <div class="sm:text-center lg:text-left">\
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">\
+                            <span class="block xl:inline">Stop losing jobs when</span>\
+                            <span class="block gradient-text">you don't pick up the phone.</span>\
+                        </h1>\
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">\
+                            We build the "Foundational Systems" for contractors. A high-converting website, automatic missed-call text backs, and automated Google reviews. All done for you.\
+                        </p>\
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">\
+                            <div class="rounded-md shadow">\
+                                <a href="#demo" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg">\
+                                    See How It Works\
+                                </a>\
+                            </div>\
+                            <div class="mt-3 sm:mt-0 sm:ml-3">\
+                                <a href="#features" class="w-full flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg">\
+                                    What's Included?\
+                                </a>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </main>\
+            </div>\
+        </div>\
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-gray-50 flex items-center justify-center p-8">\
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl shadow-2xl" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Contractor working">\
+        </div>\
+    </header>\
+\
+    <!-- The Problem -->\
+    <section class="py-16 bg-gray-50">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="text-center">\
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">The Problem</h2>\
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">\
+                    You are busy working. Your phone rings.\
+                </p>\
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">\
+                    You can't answer because you're on a roof or under a sink. That customer hangs up and calls the next guy on Google. <span class="text-red-500 font-bold">You just lost money.</span>\
+                </p>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- The 3 Pillars (Features) -->\
+    <section id="features" class="py-20 bg-white">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="text-center mb-16">\
+                <h2 class="text-3xl font-extrabold text-gray-900">The 3-Step Foundational System</h2>\
+                <p class="mt-4 text-gray-500">We don't sell "tech". We sell systems that print money.</p>\
+            </div>\
+\
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">\
+                <!-- Feature 1 -->\
+                <div class="flex flex-col rounded-2xl shadow-lg overflow-hidden border border-gray-100">\
+                    <div class="flex-shrink-0 bg-blue-50 h-48 flex items-center justify-center">\
+                        <i data-lucide="layout" class="h-20 w-20 text-blue-600"></i>\
+                    </div>\
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">\
+                        <div class="flex-1">\
+                            <h3 class="text-xl font-bold text-gray-900">1. The High-Converting Website</h3>\
+                            <p class="mt-3 text-base text-gray-500">\
+                                Most contractor websites are digital business cards. Ours are sales machines. Mobile-optimized, fast, and designed to get people to click "Call Now."\
+                            </p>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <!-- Feature 2 -->\
+                <div class="flex flex-col rounded-2xl shadow-lg overflow-hidden border border-blue-200 ring-4 ring-blue-50">\
+                    <div class="flex-shrink-0 bg-blue-600 h-48 flex items-center justify-center relative">\
+                        <div class="absolute inset-0 bg-blue-600 opacity-90"></div>\
+                        <i data-lucide="message-square" class="h-20 w-20 text-white relative z-10"></i>\
+                    </div>\
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">\
+                        <div class="flex-1">\
+                            <h3 class="text-xl font-bold text-gray-900">2. Missed Call Text Back</h3>\
+                            <p class="mt-3 text-base text-gray-500">\
+                                If you miss a call, our system <strong>immediately</strong> texts them: "Hey, sorry I missed you. How can I help?" This saves the lead 80% of the time.\
+                            </p>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <!-- Feature 3 -->\
+                <div class="flex flex-col rounded-2xl shadow-lg overflow-hidden border border-gray-100">\
+                    <div class="flex-shrink-0 bg-yellow-50 h-48 flex items-center justify-center">\
+                        <i data-lucide="star" class="h-20 w-20 text-yellow-500"></i>\
+                    </div>\
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">\
+                        <div class="flex-1">\
+                            <h3 class="text-xl font-bold text-gray-900">3. Reputation & Ranking</h3>\
+                            <p class="mt-3 text-base text-gray-500">\
+                                <strong>Reviews = Revenue.</strong> More 5-star reviews help you rank #1 on Google Maps. Our system automatically requests reviews from happy clients, boosting your visibility and making you the obvious choice in your area.\
+                            </p>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Interactive Demo Section -->\
+    <section id="demo" class="py-20 bg-gray-900 text-white overflow-hidden">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">\
+                \
+                <!-- Left: Text -->\
+                <div class="mb-12 lg:mb-0">\
+                    <h2 class="text-3xl font-extrabold sm:text-4xl">See the "Missed Call" System in Action</h2>\
+                    <p class="mt-4 text-lg text-gray-300">\
+                        Click the button to simulate a customer calling you while you are busy. Watch how the system handles it automatically.\
+                    </p>\
+                    <div class="mt-8">\
+                        <button id="startDemoBtn" onclick="runDemo()" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-full shadow-lg transform transition hover:scale-105 flex items-center gap-3">\
+                            <i data-lucide="play-circle"></i> Simulate Missed Call\
+                        </button>\
+                    </div>\
+                    <p class="mt-4 text-sm text-gray-400 italic">*Watch the phone screen on the right</p>\
+                </div>\
+\
+                <!-- Right: Phone Simulator -->\
+                <div class="flex justify-center">\
+                    <div class="phone-mockup w-72 h-[550px] bg-gray-100 relative">\
+                        <div class="notch"></div>\
+                        \
+                        <!-- Screen Header -->\
+                        <div class="bg-white p-4 pt-10 border-b flex items-center gap-3 shadow-sm">\
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">HVAC</div>\
+                            <div>\
+                                <div class="text-xs text-gray-500">To:</div>\
+                                <div class="font-bold text-gray-800 text-sm">Your Business</div>\
+                            </div>\
+                        </div>\
+\
+                        <!-- Chat Area -->\
+                        <div id="chatContainer" class="p-4 flex flex-col gap-2 h-full overflow-y-auto pb-20 bg-gray-50">\
+                            <!-- Messages will appear here -->\
+                            <div class="text-center text-xs text-gray-400 mt-4">Today 2:41 PM</div>\
+                        </div>\
+\
+                        <!-- Input Area (Fake) -->\
+                        <div class="absolute bottom-0 w-full bg-white p-3 border-t">\
+                            <div class="h-8 bg-gray-100 rounded-full w-full"></div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Pricing / Offer -->\
+    <section id="pricing" class="py-20 bg-white">\
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">\
+            <h2 class="text-3xl font-extrabold text-gray-900">Our "We Only Win When You Win" Guarantee</h2>\
+            <p class="mt-4 text-xl text-gray-500">We are so confident this works, we take all the risk.</p>\
+            \
+            <div class="mt-12 bg-white rounded-2xl shadow-xl border-2 border-blue-600 overflow-hidden transform hover:-translate-y-2 transition duration-300">\
+                <div class="bg-blue-600 py-4">\
+                    <h3 class="text-white font-bold text-lg tracking-wider uppercase">The Foundation Package</h3>\
+                </div>\
+                <div class="p-8">\
+                    <div class="flex flex-col justify-center items-center">\
+                        <span class="text-5xl font-extrabold text-gray-900">Start for $0</span>\
+                        <span class="text-blue-600 font-bold mt-2 text-lg">Pay nothing until you profit.</span>\
+                    </div>\
+                    <p class="text-sm text-gray-500 mt-4 max-w-lg mx-auto">\
+                        We build your system for free. You only start paying the <strong>$297/mo</strong> fee <em>after</em> the system has generated enough leads to cover your cost. If you don't make money, we don't get paid.\
+                    </p>\
+\
+                    <ul class="mt-8 space-y-4 text-left max-w-sm mx-auto">\
+                        <li class="flex items-center">\
+                            <i data-lucide="check-circle" class="text-green-500 h-5 w-5 mr-3"></i>\
+                            <span class="text-gray-700">Custom 5-Page Website</span>\
+                        </li>\
+                        <li class="flex items-center">\
+                            <i data-lucide="check-circle" class="text-green-500 h-5 w-5 mr-3"></i>\
+                            <span class="text-gray-700 font-bold">Missed Call Text Back</span>\
+                        </li>\
+                        <li class="flex items-center">\
+                            <i data-lucide="check-circle" class="text-green-500 h-5 w-5 mr-3"></i>\
+                            <span class="text-gray-700">Google Review Automation</span>\
+                        </li>\
+                        <li class="flex items-center">\
+                            <i data-lucide="check-circle" class="text-green-500 h-5 w-5 mr-3"></i>\
+                            <span class="text-gray-700">Database Reactivation Campaign</span>\
+                        </li>\
+                        <li class="flex items-center">\
+                            <i data-lucide="check-circle" class="text-green-500 h-5 w-5 mr-3"></i>\
+                            <span class="text-gray-700">Hosting & Maintenance Included</span>\
+                        </li>\
+                    </ul>\
+\
+                    <div class="mt-10">\
+                        <button onclick="scrollToContact()" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg animate-pulse">\
+                            Schedule a Call\
+                        </button>\
+                        <div class="mt-4 text-sm text-gray-500">\
+                            Or email: <a href="mailto:thetiger@alumni.stanford.edu" class="font-medium text-blue-600 hover:underline">thetiger@alumni.stanford.edu</a>\
+                        </div>\
+                        <p class="text-xs text-gray-400 mt-2">Limited to 5 new contractors per month.</p>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Footer / Contact -->\
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">\
+            <div class="mb-4 md:mb-0">\
+                <span class="font-bold text-xl text-gray-900">Foundational Systems</span>\
+                <p class="text-gray-500 text-sm mt-1">Helping contractors win more jobs.</p>\
+            </div>\
+            <div class="flex space-x-6">\
+                <a href="mailto:thetiger@alumni.stanford.edu" class="text-gray-400 hover:text-gray-500">Contact Support</a>\
+                <a href="#" class="text-gray-400 hover:text-gray-500">Privacy Policy</a>\
+            </div>\
+        </div>\
+    </footer>\
+\
+    <!-- Scripts -->\
+    <script>\
+        // Initialize Icons\
+        lucide.createIcons();\
+\
+        function scrollToContact() \{\
+            // Opens the Google Calendar link in a new tab\
+            window.open("https://calendar.app.google/Ln1QbLQv6zVbU6xA6", "_blank");\
+        \}\
+\
+        // Demo Logic\
+        function runDemo() \{\
+            const container = document.getElementById('chatContainer');\
+            const btn = document.getElementById('startDemoBtn');\
+            \
+            // Reset\
+            container.innerHTML = '<div class="text-center text-xs text-gray-400 mt-4">Today 2:41 PM</div>';\
+            btn.disabled = true;\
+            btn.innerHTML = 'Running Demo...';\
+            btn.classList.add('opacity-50', 'cursor-not-allowed');\
+\
+            // Sequence\
+            setTimeout(() => \{\
+                addMessage("call", "Missed Call from Customer (You were busy)", "center");\
+            \}, 500);\
+\
+            setTimeout(() => \{\
+                addMessage("sent", "Hey! Sorry I missed you, I'm currently on a job site. How can I help you?", "right");\
+            \}, 2500);\
+\
+            setTimeout(() => \{\
+                addMessage("received", "Do you guys do emergency roof repair? I have a leak.", "left");\
+            \}, 5500);\
+\
+            setTimeout(() => \{\
+                addMessage("sent", "Yes we do! I can have someone there in 2 hours. Want me to book it?", "right");\
+                \
+                // Reset Button\
+                setTimeout(() => \{\
+                    btn.disabled = false;\
+                    btn.innerHTML = '<i data-lucide="play-circle" class="mr-2"></i> Run Demo Again';\
+                    btn.classList.remove('opacity-50', 'cursor-not-allowed');\
+                    lucide.createIcons();\
+                \}, 1000);\
+\
+            \}, 8500);\
+        \}\
+\
+        function addMessage(type, text, align) \{\
+            const container = document.getElementById('chatContainer');\
+            const div = document.createElement('div');\
+            \
+            if (type === 'call') \{\
+                div.className = 'w-full text-center text-xs text-red-500 font-bold my-2 bg-red-50 p-2 rounded';\
+                div.innerHTML = `<span class="flex items-center justify-center gap-1"><i data-lucide="phone-missed" class="h-3 w-3"></i> $\{text\}</span>`;\
+            \} else \{\
+                div.className = `message-bubble $\{type === 'sent' ? 'msg-sent' : 'msg-received'\} flex flex-col`;\
+                div.innerText = text;\
+            \}\
+            \
+            container.appendChild(div);\
+            lucide.createIcons();\
+            container.scrollTop = container.scrollHeight;\
+        \}\
+    </script>\
+</body>\
+</html>}
